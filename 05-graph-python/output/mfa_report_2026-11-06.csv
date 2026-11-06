@@ -1,0 +1,11 @@
+name,admin,mfa_registered,methods,risk
+Beka Edao,True,False,none,HIGH - admin without MFA
+Emergency Access 01,True,False,none,HIGH - admin without MFA
+Aisha Bello,False,False,none,MEDIUM - no MFA
+Carlos Rivera,False,False,none,MEDIUM - no MFA
+Jordan Ellis,False,False,none,MEDIUM - no MFA
+Marcus Reed,False,False,none,MEDIUM - no MFA
+Priya Patel,False,False,none,MEDIUM - no MFA
+Sam Okafor,False,False,none,MEDIUM - no MFA
+Beka Admin,True,True,"microsoftAuthenticatorPush, softwareOneTimePasscode",OK
+Lena Novak,False,True,"microsoftAuthenticatorPush, softwareOneTimePasscode",OK

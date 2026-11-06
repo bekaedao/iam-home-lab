@@ -1,0 +1,12 @@
+displayName,userPrincipalName,givenName,surname,department,jobTitle,accountEnabled,createdDateTime
+Jordan Ellis,jordan.ellis@edao.example,,,Finance,AP Specialist,True,2026-10-12T02:20:04Z
+Maya Chen,maya.chen@edao.example,Maya,Chen,Finance,Accountant,False,2026-10-12T02:18:53Z
+Marcus Reed,marcus.reed@edao.example,,,HR,Recruiter,True,2026-10-12T02:22:20Z
+Priya Patel,priya.patel@edao.example,,,HR,HR Manager,True,2026-10-12T02:21:19Z
+Lena Novak,lena.novak@edao.example,Lena,Novak,IT,Systems Administrator,True,2026-10-12T02:25:18Z
+Sam Okafor,sam.okafor@edao.example,Sam,Okafor,IT,Help Desk Technician,True,2026-10-12T02:23:49Z
+Aisha Bello,aisha.bello@edao.example,,,Sales,Sales Manager,True,2026-10-12T02:36:15Z
+Carlos Rivera,carlos.rivera@edao.example,,,Sales,Sales Representative,True,2026-10-12T02:26:43Z
+Beka Admin,admin@edao.example,,,,,True,2026-10-12T01:57:24Z
+Beka Edao,tenant-owner#EXT#@edao.example,Beka,Edao,,,True,2026-10-12T00:43:58Z
+Emergency Access 01,breakglass01@edao.example,,,,,True,2026-10-12T02:11:31Z

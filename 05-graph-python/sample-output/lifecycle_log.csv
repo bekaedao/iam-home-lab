@@ -1,0 +1,5 @@
+time,action,user,department,group
+2026-11-06T11:42:06,JOINER,Daniel Kim,IT,SG-IT
+2026-11-06T15:45:07,LEAVER - Account disabled,Daniel Kim,IT,accountEnabled = false
+2026-11-06T15:45:07,LEAVER - Sessions revoked,Daniel Kim,IT,all refresh tokens invalidated
+2026-11-06T15:45:08,LEAVER - Removed from group,Daniel Kim,IT,SG-IT

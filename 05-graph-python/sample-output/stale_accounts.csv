@@ -1,0 +1,12 @@
+name,department,enabled,last_sign_in,status
+Aisha Bello,Sales,True,never,NEVER SIGNED IN
+Carlos Rivera,Sales,True,never,NEVER SIGNED IN
+Jordan Ellis,Finance,True,never,NEVER SIGNED IN
+Marcus Reed,HR,True,never,NEVER SIGNED IN
+Sam Okafor,IT,True,never,NEVER SIGNED IN
+Beka Admin,-,True,2026-11-06,Active
+Beka Edao,-,True,2026-11-04,Active
+Emergency Access 01,-,True,2026-11-04,Active
+Lena Novak,IT,True,2026-11-05,Active
+Priya Patel,HR,True,2026-11-05,Active
+Maya Chen,Finance,False,2026-11-05,Disabled
