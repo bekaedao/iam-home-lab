@@ -12,6 +12,7 @@ Edao Logistics (a fictional company) had no access rules, no enforced MFA, and a
 - Microsoft Entra ID **P2** licensing for all employees
 - 3 **Conditional Access** policies, built and validated in report-only mode
 - **Privileged Identity Management (PIM)**: User Administrator is *eligible* only, with justification, approval and a 2-hour time limit
+- A quarterly **access review** on `SG-Finance` that caught and automatically removed a transferred employee's leftover access
 
 | Tool | Used for |
 | --- | --- |
@@ -85,6 +86,46 @@ Role settings: activation lasts at most 2 hours, requires MFA, requires a writte
 
 ![PIM role settings](screenshots/lab2-15-pim-settings.png)
 
+### 7. Access review: catching access that nobody cleaned up
+
+**Scenario:** Jordan Ellis transferred from Finance to Sales (HR ticket #1002), but his membership in `SG-Finance` was never removed. This is *access creep*, one of the most common audit findings. A quarterly access review is the control that catches it.
+
+Created **Q4 2026 – SG-Finance membership review** in Identity Governance:
+
+| Setting | Value | Why |
+| --- | --- | --- |
+| Scope | All members of `SG-Finance` | Finance access is sensitive |
+| Reviewer | Beka Admin (selected reviewer) | A named person is accountable |
+| Recurrence | Quarterly, no end date | Matches a typical audit cycle |
+| Auto-apply results | Enabled | Denied users are removed without a manual step |
+| If reviewers don't respond | Remove access | Access has to be re-justified, not kept by default |
+| Decision helpers | Enabled (no sign-in for 30 days) | Flags inactive accounts for the reviewer |
+| Justification required | Enabled | Every decision has a written reason for auditors |
+
+![Access review settings](screenshots/lab2-19-access-review-settings.png)
+
+As the reviewer, Entra's decision helper already recommended **Deny** for Jordan, flagged as an *Inactive user*, and **Approve** for Maya Chen.
+
+![Reviewer view with recommendations](screenshots/lab2-20-access-review-recommendations.png)
+
+I recorded both decisions with a written reason:
+
+- **Maya Chen: Approved.** *"Accountant in Finance – access confirmed."*
+- **Jordan Ellis: Denied.** *"Transferred to Sales per HR ticket #1002 – Finance access no longer required."*
+
+![Approve and deny with justification](screenshots/lab2-21-access-review-decisions.png)
+![Decisions recorded](screenshots/lab2-22-access-review-recorded.png)
+
+I stopped the review and applied the results. The overview shows the final tally: 2 users reviewed, 1 approved, 1 denied, 0 not reviewed.
+
+![Review results](screenshots/lab2-23-access-review-results.png)
+
+Because auto-apply was enabled, Entra **removed Jordan from `SG-Finance` automatically**. Maya is now the only member.
+
+![SG-Finance after the review](screenshots/lab2-24-sg-finance-after-review.png)
+
+> **Why this mattered later:** `SG-Finance` is one of the groups I federate to AWS in [Lab 4](../04-aws/README.md). Because the review removed Jordan first, he was never provisioned into AWS at all. Cleaning up identity at the source keeps stale access from spreading to every connected system.
+
 ---
 
 ## Validation
@@ -124,6 +165,7 @@ The PIM resource audit captured the full chain: eligible assignment, role-settin
 - **Admin coverage.** When creating CA01, Entra warned about locking myself out, so I excluded my admin account from CA01. Admins are covered by the stricter CA03 instead, which requires MFA and daily re-authentication.
 - **No standing admin rights for staff.** Lena's admin access is eligible only, time-boxed to 2 hours, and needs approval.
 - **Separate MFA registration per test user**, to mirror real per-user enrollment.
+- **Access reviews remove by default.** If a reviewer doesn't respond, access is removed, and denied users are removed automatically, so keeping access always requires a decision.
 
 ## What went wrong and how I fixed it
 
@@ -131,6 +173,7 @@ The PIM resource audit captured the full chain: eligible assignment, role-settin
 - **Test sign-in wasn't showing in the logs.** Sign-in logs only showed my admin's attempts at first. Private browser windows in the same browser share one session, so I used separate browsers for the admin and the test user, filtered the logs by user, and allowed time for the logs to catch up.
 - **Misreading a policy summary.** CA03's summary said "Client apps: 1 included," which looked like the policy only covered one app type. Opening the policy showed Client apps as *Not configured*, which means **all** clients. I verified the setting itself instead of trusting the summary.
 - **What If needed a specific app.** The What If tool wouldn't run on "all apps," so I simulated Office 365, the bundle employees actually use.
+- **Denied user still in the group.** After I finished my decisions, My Access showed the review as completed, but Jordan was still in `SG-Finance`. Decisions aren't enforced until the review **ends**. I found **Stop** under the review's current instance, stopped it, then applied the results. Jordan was removed automatically.
 
 ## What I'd do in production
 
@@ -138,9 +181,9 @@ The PIM resource audit captured the full chain: eligible assignment, role-settin
 - Switch CA01 and CA02 from report-only to **On** after a monitoring period.
 - Alert on any break-glass sign-in, and test it on a schedule.
 - Remove Global Administrator from the original owner account once the dedicated admin and break-glass accounts are proven.
-- Run quarterly **access reviews** on privileged roles and groups.
+- Extend **access reviews** beyond `SG-Finance` to privileged roles (through PIM), every group that grants app access, and guest users. Assign group owners or managers as reviewers instead of one admin.
 - Use group-based licensing so new hires get licenses automatically.
 
 ## Skills demonstrated
 
-Microsoft Entra ID · Conditional Access · Multi-factor authentication · Privileged Identity Management (PIM) · RBAC · Dynamic groups · Least privilege · Zero Trust · Sign-in log analysis · Audit evidence
+Microsoft Entra ID · Conditional Access · Multi-factor authentication · Privileged Identity Management (PIM) · Access reviews (identity governance) · RBAC · Dynamic groups · Least privilege · Zero Trust · Sign-in log analysis · Audit evidence
