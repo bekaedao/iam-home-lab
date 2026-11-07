@@ -2,7 +2,7 @@
 
 > **Goal:** Give Edao Logistics employees access to AWS with their existing Entra ID accounts, with no separate AWS passwords. Users and groups flow from Entra to AWS automatically, each department gets only the AWS permissions its job needs, and disabling someone in Entra cuts off their AWS access too. Every claim is backed by Entra provisioning logs and AWS CloudTrail.
 
-**Platforms:** AWS IAM Identity Center (organization instance) · Microsoft Entra ID (from [Lab 2](../02-entra-id/README.md)) · **Company:** Edao Logistics (fictional) · **Protocols:** SAML 2.0 (sign-in) + SCIM 2.0 (provisioning)
+**Platforms:** AWS IAM Identity Center (organization instance) · Microsoft Entra ID (from [Lab 2](../02-entra-id/README.md)) · **Company:** Edao Logistics · **Protocols:** SAML 2.0 (sign-in) + SCIM 2.0 (provisioning)
 
 ---
 
