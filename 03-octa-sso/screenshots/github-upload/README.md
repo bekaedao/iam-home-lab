@@ -2,7 +2,7 @@
 
 > **Goal:** Make Okta the single front door for a company app. Sort users into access groups automatically from HR data, require phishing-resistant MFA, and prove that a new hire, a transfer and a departing employee each end up with exactly the access they should, backed by audit-log evidence.
 
-**Platform:** Okta Integrator Free Plan (Okta Identity Engine) · **Company:** Edao Logistics (fictional) · **Protocol:** OpenID Connect (OIDC)
+**Platform:** Okta Integrator Free Plan (Okta Identity Engine) · **Company:** Edao Logistics· **Protocol:** OpenID Connect (OIDC)
 
 ---
 
