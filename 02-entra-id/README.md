@@ -2,7 +2,7 @@
 
 ## Business problem
 
-Edao Logistics (a fictional company) had no access rules, no enforced MFA, and admins who would hold full control permanently. A stolen admin password would mean a full tenant compromise.
+Edao Logistics had no access rules, no enforced MFA, and admins who would hold full control permanently. A stolen admin password would mean a full tenant compromise.
 
 ## What I built
 
