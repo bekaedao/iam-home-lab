@@ -1,0 +1,43 @@
+scan_time,finding_id,finding,user,risk,detail
+2026-11-06 20:44,F01,Terminated in HR but account still enabled,Carlos Rivera,High,department=Sales; terminated_on=2026-10-31; days_since_termination=7
+2026-11-06 20:44,F02,Mover not processed (HR and Entra departments differ),Jordan Ellis,High,hr_department=Sales; entra_department=Finance; changed_on=2026-11-01; current_groups=DYN-Finance
+2026-11-06 20:44,F03,Separation-of-duties conflict,Sam Okafor,High,rule_id=SOD-01; group_a=SG-IT; group_b=SG-Finance; reason=IT administrators control the systems and must not also hold Finance access
+2026-11-06 20:44,F04,Admin role without MFA,Emergency Access 01,High,roles=Global Administrator; assignment_type=Active; mfa_registered=False
+2026-11-06 20:44,F04,Admin role without MFA,Beka Edao,High,roles=Global Administrator; assignment_type=Active; mfa_registered=False
+2026-11-06 20:44,F05,Account with no HR record (needs a named owner),Beka Admin,Medium,user_type=Member; has_admin_role=Yes
+2026-11-06 20:44,F05,Account with no HR record (needs a named owner),Beka Edao,Medium,user_type=Member; has_admin_role=Yes
+2026-11-06 20:44,F05,Account with no HR record (needs a named owner),Emergency Access 01,Medium,user_type=Member; has_admin_role=Yes
+2026-11-06 20:44,F06,Enabled account never used or inactive 30+ days,Aisha Bello,Medium,department=Sales; created=2026-10-12; last_sign_in=never; days_inactive=26
+2026-11-06 20:44,F06,Enabled account never used or inactive 30+ days,Carlos Rivera,Medium,department=Sales; created=2026-10-12; last_sign_in=never; days_inactive=26
+2026-11-06 20:44,F06,Enabled account never used or inactive 30+ days,Jordan Ellis,Medium,department=Finance; created=2026-10-12; last_sign_in=never; days_inactive=26
+2026-11-06 20:44,F06,Enabled account never used or inactive 30+ days,Marcus Reed,Medium,department=HR; created=2026-10-12; last_sign_in=never; days_inactive=26
+2026-11-06 20:44,F06,Enabled account never used or inactive 30+ days,Sam Okafor,Medium,department=IT; created=2026-10-12; last_sign_in=never; days_inactive=26
+2026-11-06 20:44,F07,Enabled user without MFA,Aisha Bello,Medium,department=Sales
+2026-11-06 20:44,F07,Enabled user without MFA,Carlos Rivera,Medium,department=Sales
+2026-11-06 20:44,F07,Enabled user without MFA,Jordan Ellis,Medium,department=Finance
+2026-11-06 20:44,F07,Enabled user without MFA,Marcus Reed,Medium,department=HR
+2026-11-06 20:44,F07,Enabled user without MFA,Priya Patel,Medium,department=HR
+2026-11-06 20:44,F07,Enabled user without MFA,Sam Okafor,Medium,department=IT
+2026-11-06 20:44,F08,Employee missing first or last name (blocks SCIM provisioning),Aisha Bello,Low,department=Sales
+2026-11-06 20:44,F08,Employee missing first or last name (blocks SCIM provisioning),Carlos Rivera,Low,department=Sales
+2026-11-06 20:44,F08,Employee missing first or last name (blocks SCIM provisioning),Jordan Ellis,Low,department=Finance
+2026-11-06 20:44,F08,Employee missing first or last name (blocks SCIM provisioning),Marcus Reed,Low,department=HR
+2026-11-06 20:44,F08,Employee missing first or last name (blocks SCIM provisioning),Priya Patel,Low,department=HR
+2026-11-06 20:59,F04,Admin role without MFA,Emergency Access 01,High,roles=Global Administrator; assignment_type=Active; mfa_registered=False
+2026-11-06 20:59,F04,Admin role without MFA,Beka Edao,High,roles=Global Administrator; assignment_type=Active; mfa_registered=False
+2026-11-06 20:59,F05,Account with no HR record (needs a named owner),Beka Admin,Medium,user_type=Member; has_admin_role=Yes
+2026-11-06 20:59,F05,Account with no HR record (needs a named owner),Beka Edao,Medium,user_type=Member; has_admin_role=Yes
+2026-11-06 20:59,F05,Account with no HR record (needs a named owner),Emergency Access 01,Medium,user_type=Member; has_admin_role=Yes
+2026-11-06 20:59,F06,Enabled account never used or inactive 30+ days,Aisha Bello,Medium,department=Sales; created=2026-10-12; last_sign_in=never; days_inactive=26
+2026-11-06 20:59,F06,Enabled account never used or inactive 30+ days,Jordan Ellis,Medium,department=Sales; created=2026-10-12; last_sign_in=never; days_inactive=26
+2026-11-06 20:59,F06,Enabled account never used or inactive 30+ days,Marcus Reed,Medium,department=HR; created=2026-10-12; last_sign_in=never; days_inactive=26
+2026-11-06 20:59,F06,Enabled account never used or inactive 30+ days,Sam Okafor,Medium,department=IT; created=2026-10-12; last_sign_in=never; days_inactive=26
+2026-11-06 20:59,F07,Enabled user without MFA,Aisha Bello,Medium,department=Sales
+2026-11-06 20:59,F07,Enabled user without MFA,Jordan Ellis,Medium,department=Sales
+2026-11-06 20:59,F07,Enabled user without MFA,Marcus Reed,Medium,department=HR
+2026-11-06 20:59,F07,Enabled user without MFA,Priya Patel,Medium,department=HR
+2026-11-06 20:59,F07,Enabled user without MFA,Sam Okafor,Medium,department=IT
+2026-11-06 20:59,F08,Employee missing first or last name (blocks SCIM provisioning),Aisha Bello,Low,department=Sales
+2026-11-06 20:59,F08,Employee missing first or last name (blocks SCIM provisioning),Jordan Ellis,Low,department=Sales
+2026-11-06 20:59,F08,Employee missing first or last name (blocks SCIM provisioning),Marcus Reed,Low,department=HR
+2026-11-06 20:59,F08,Employee missing first or last name (blocks SCIM provisioning),Priya Patel,Low,department=HR

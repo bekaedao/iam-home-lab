@@ -1,0 +1,4 @@
+time,action,user,department,group
+2026-11-06T20:46:31,LEAVER - Account disabled,Carlos Rivera,Sales,accountEnabled = false
+2026-11-06T20:46:31,LEAVER - Sessions revoked,Carlos Rivera,Sales,all refresh tokens invalidated
+2026-11-06T20:46:32,LEAVER - Removed from group,Carlos Rivera,Sales,SG-Sales

@@ -1,0 +1,19 @@
+scan_time,finding_id,finding,user,risk,detail
+2026-11-06 20:59,F04,Admin role without MFA,Emergency Access 01,High,roles=Global Administrator; assignment_type=Active; mfa_registered=False
+2026-11-06 20:59,F04,Admin role without MFA,Beka Edao,High,roles=Global Administrator; assignment_type=Active; mfa_registered=False
+2026-11-06 20:59,F05,Account with no HR record (needs a named owner),Beka Admin,Medium,user_type=Member; has_admin_role=Yes
+2026-11-06 20:59,F05,Account with no HR record (needs a named owner),Beka Edao,Medium,user_type=Member; has_admin_role=Yes
+2026-11-06 20:59,F05,Account with no HR record (needs a named owner),Emergency Access 01,Medium,user_type=Member; has_admin_role=Yes
+2026-11-06 20:59,F06,Enabled account never used or inactive 30+ days,Aisha Bello,Medium,department=Sales; created=2026-10-12; last_sign_in=never; days_inactive=26
+2026-11-06 20:59,F06,Enabled account never used or inactive 30+ days,Jordan Ellis,Medium,department=Sales; created=2026-10-12; last_sign_in=never; days_inactive=26
+2026-11-06 20:59,F06,Enabled account never used or inactive 30+ days,Marcus Reed,Medium,department=HR; created=2026-10-12; last_sign_in=never; days_inactive=26
+2026-11-06 20:59,F06,Enabled account never used or inactive 30+ days,Sam Okafor,Medium,department=IT; created=2026-10-12; last_sign_in=never; days_inactive=26
+2026-11-06 20:59,F07,Enabled user without MFA,Aisha Bello,Medium,department=Sales
+2026-11-06 20:59,F07,Enabled user without MFA,Jordan Ellis,Medium,department=Sales
+2026-11-06 20:59,F07,Enabled user without MFA,Marcus Reed,Medium,department=HR
+2026-11-06 20:59,F07,Enabled user without MFA,Priya Patel,Medium,department=HR
+2026-11-06 20:59,F07,Enabled user without MFA,Sam Okafor,Medium,department=IT
+2026-11-06 20:59,F08,Employee missing first or last name (blocks SCIM provisioning),Aisha Bello,Low,department=Sales
+2026-11-06 20:59,F08,Employee missing first or last name (blocks SCIM provisioning),Jordan Ellis,Low,department=Sales
+2026-11-06 20:59,F08,Employee missing first or last name (blocks SCIM provisioning),Marcus Reed,Low,department=HR
+2026-11-06 20:59,F08,Employee missing first or last name (blocks SCIM provisioning),Priya Patel,Low,department=HR

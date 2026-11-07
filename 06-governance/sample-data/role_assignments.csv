@@ -1,0 +1,6 @@
+user_id,role,assignment
+user-04,Global Administrator,Active
+user-03,Global Administrator,Active
+user-01,Global Administrator,Active
+object-13,Directory Readers,Active
+user-08,User Administrator,Eligible (PIM)

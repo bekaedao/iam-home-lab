@@ -1,0 +1,9 @@
+user_id,display_name,group_name,membership_type
+user-10,Maya Chen,SG-Finance,Assigned
+user-12,Sam Okafor,SG-IT,Assigned
+user-08,Lena Novak,SG-IT,Assigned
+user-07,Jordan Ellis,SG-Sales,Assigned
+user-02,Aisha Bello,SG-Sales,Assigned
+user-11,Priya Patel,SG-HR,Assigned
+user-09,Marcus Reed,SG-HR,Assigned
+user-10,Maya Chen,DYN-Finance,Dynamic

@@ -1,0 +1,4 @@
+rule_id,group_a,group_b,risk,reason
+SOD-01,SG-IT,%Finance,High,IT administrators control the systems and must not also hold Finance access
+SOD-02,SG-HR,%Finance,High,HR changes employee and pay records and must not also access Finance
+SOD-03,SG-Sales,%Finance,Medium,Sales negotiates deals and must not also approve or process payments

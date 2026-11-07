@@ -1,0 +1,10 @@
+employee_id,display_name,department,job_title,status,effective_date
+E1001,Maya Chen,Finance,Accountant,Terminated,2026-11-04
+E1002,Jordan Ellis,Sales,Sales Representative,Active,2026-11-01
+E1003,Marcus Reed,HR,Recruiter,Active,2026-10-12
+E1004,Priya Patel,HR,HR Manager,Active,2026-10-12
+E1005,Lena Novak,IT,Systems Administrator,Active,2026-10-12
+E1006,Sam Okafor,IT,Help Desk Technician,Active,2026-10-12
+E1007,Aisha Bello,Sales,Sales Manager,Active,2026-10-12
+E1008,Carlos Rivera,Sales,Sales Representative,Terminated,2026-10-31
+E1009,Daniel Kim,IT,Cloud Engineer,Terminated,2026-11-06

@@ -1,0 +1,11 @@
+user_id,display_name,is_admin,mfa_registered,methods
+user-02,Aisha Bello,False,False,
+user-01,Beka Admin,True,True,"microsoftAuthenticatorPush, softwareOneTimePasscode"
+user-03,Beka Edao,True,False,
+user-05,Carlos Rivera,False,False,
+user-04,Emergency Access 01,True,False,
+user-07,Jordan Ellis,False,False,
+user-08,Lena Novak,False,True,"microsoftAuthenticatorPush, softwareOneTimePasscode"
+user-09,Marcus Reed,False,False,
+user-11,Priya Patel,False,False,
+user-12,Sam Okafor,False,False,

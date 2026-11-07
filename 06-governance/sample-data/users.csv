@@ -1,0 +1,13 @@
+user_id,display_name,upn,given_name,surname,department,job_title,account_enabled,user_type,created,last_sign_in
+user-01,Beka Admin,admin@edao.example,,,,,True,Member,2026-10-12,2026-11-06
+user-02,Aisha Bello,aisha.bello@edao.example,,,Sales,Sales Manager,True,Member,2026-10-12,
+user-03,Beka Edao,tenant-owner#EXT#@edao.example,Beka,Edao,,,True,Member,2026-10-12,2026-11-06
+user-04,Emergency Access 01,breakglass01@edao.example,,,,,True,Member,2026-10-12,2026-11-04
+user-05,Carlos Rivera,carlos.rivera@edao.example,,,Sales,Sales Representative,False,Member,2026-10-12,
+user-06,Daniel Kim,daniel.kim@edao.example,Daniel,Kim,IT,Cloud Engineer,False,Member,2026-11-06,
+user-07,Jordan Ellis,jordan.ellis@edao.example,,,Sales,Sales Representative,True,Member,2026-10-12,
+user-08,Lena Novak,lena.novak@edao.example,Lena,Novak,IT,Systems Administrator,True,Member,2026-10-12,2026-11-05
+user-09,Marcus Reed,marcus.reed@edao.example,,,HR,Recruiter,True,Member,2026-10-12,
+user-10,Maya Chen,maya.chen@edao.example,Maya,Chen,Finance,Accountant,False,Member,2026-10-12,2026-11-05
+user-11,Priya Patel,priya.patel@edao.example,,,HR,HR Manager,True,Member,2026-10-12,2026-11-05
+user-12,Sam Okafor,sam.okafor@edao.example,Sam,Okafor,IT,Help Desk Technician,True,Member,2026-10-12,
