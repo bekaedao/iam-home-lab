@@ -2,7 +2,7 @@
 
 **Hands-on identity and access management labs, built and documented end to end.**
 
-I'm designing the identity program for **Edao Logistics**, a fictional company, across the platforms real IAM teams run every day: Microsoft Entra ID, Okta, Active Directory and AWS. Every lab is built from scratch, tested against expected outcomes, and backed by screenshots and audit-log evidence.
+I'm designing the identity program for **Edao Logistics**, across the platforms real IAM teams run every day: Microsoft Entra ID, Okta, Active Directory and AWS. Every lab is built from scratch, tested against expected outcomes, and backed by screenshots and audit-log evidence.
 
 ![Labs completed](https://img.shields.io/badge/labs_completed-6_of_6-brightgreen)
 ![Entra ID](https://img.shields.io/badge/Microsoft_Entra_ID-0078D4?logo=microsoft&logoColor=white)
